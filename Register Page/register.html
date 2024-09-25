@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wHeelHub | Register </title>
+    <link rel="stylesheet" href="registerstyle.css">
+</head>
+<body>
+
+   <header>
+        <a href="../index.html" class="logo"><span>wHeel</span>Hub</a>
+   </header>
+
+   <section>
+        <div class="form-container">
+            <h3 class="form-title title">Register</h3>
+            <h4 class="form-title message">use your email for registration</h4>
+            <form action="../index.html" onsubmit="return validateData()">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username">
+                    <div id="error-username" class="error"></div>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                    <div id="error-email" class="error"></div>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                    <div id="error-password" class="error"></div>
+                </div>
+                <div class="input-group">
+                    <label for="confirm">Confirm password</label>
+                    <input type="password" name="confirm" id="confirm">
+                    <div id="error-confirm" class="error"></div>
+                </div>
+                <div class="input-gender">
+                    <label for="gender" class="gender-title">Gender</label>
+                    <div class="gender-option">
+                        <input type="radio" name="gender" id="gender-man">
+                        <label for="gender-man">Male</label>
+                        <input type="radio" name="gender" id="gender-women">
+                        <label for="gender-women">Female</label>
+                    </div>
+                    <div id="error-gender" class="error"></div>
+                </div>
+                <div class="input-group">
+                    <label for="date">Date of birth</label>
+                    <input type="date" name="date" id="date" placeholder="">
+                    <div id="error-dob" class="error"></div>
+                </div>
+                <div class="input-check">
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox">agree with terms and conditions</label>
+                </div>   
+                <div id="error-checkbox" class="error"></div>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+   </section>
+
+   <div class="cruve-line"></div>
+   <div class="block-box"></div>
+
+   <footer>
+        <h2 class="footer"><span>wHeel</span>Hub</h2>
+        <div class="menu">
+            <a href="" class="footer-menu">Home</a>
+            <a href="" class="footer-menu">Promotion</a>
+            <a href="" class="footer-menu">All Cars</a>
+            <a href="" class="footer-menu">About Us</a>
+        </div>
+        <p class="footer copyright">Copyright © 2024; Designed by Griffin Cayady-2602171174</p>
+    </footer>
+    
+</body>
+    <script src="register.js"></script>
+</html>

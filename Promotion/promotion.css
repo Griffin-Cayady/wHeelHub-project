@@ -1,0 +1,422 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100dvh;
+    background-color: #FFFAFA;
+}
+
+/* Navigation Menu */
+header {
+    background: #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    z-index: 2;
+}
+
+.navbar-logo {
+    margin-right: auto;
+    padding-left: 30px;
+}
+
+.navbar-button {
+    margin-left: auto;
+    padding-right: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.navbar {
+    justify-content: center;
+    margin: 20px 30px;
+}
+
+span {
+    color: #FFE500;
+}
+
+.logo {
+    font-size: 28px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    line-height: 50px;
+    width: 70px;
+    padding: 8px 16px;
+    background-color: #1e1e1e;
+    flex-direction: column;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    color: #FFE500;
+    text-decoration: #FFE500 underline;
+}
+
+.button {
+    margin: 0px 6px;
+    width: 90px;
+    height: 30px;
+    border: none;
+    border-radius: 12px 2px 12px 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    background-color: #FFE500;
+}
+
+.login a {
+    color: #1e1e1e;
+}
+
+.register a{
+    color: #1e1e1e;
+    background-color: white;
+}
+
+.navbar-menu:hover {
+    color: #FFE500;
+    text-decoration: underline;
+}
+
+input {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.logo {
+    font-size: 28px;
+}
+
+p {
+    font-size: 18px;
+    color: white;
+}
+
+.promotion {
+    color: #FFE500;
+    text-decoration: underline;
+}
+
+/* Website Content */
+
+.heading-section {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 64px;
+}
+
+.all-promotion-section {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 64px;
+}
+
+.all-promotion-section h2 {
+    font-size: 2rem;
+    color: #1e1e1e;
+    text-decoration: #FFE500 underline;
+    margin-left: 16px;
+}
+
+.heading-section h2 {
+    font-size: 2rem;
+    color: #1e1e1e;
+    text-decoration: #FFE500 underline;
+    margin-left: 16px;
+}
+
+.promotion-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.promotion-card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border: 4px solid #c3c6ce;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin: 16px;
+}
+
+.front-promotion-card {
+    width: 300px;
+    height: 200px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.front-promotion-card img {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    z-index: 1;
+    border-radius: 8px;
+    filter: brightness(60%);
+}
+
+.front-promotion-card h4 {
+    padding: 0px 12px 6px 12px;
+    font-size: 14px;
+    color: #FFE500;
+    z-index: 2;
+}
+
+.front-promotion-text {
+    padding: 0px 12px 12px 12px;
+    font-size: 10px;
+    color: white;
+    z-index: 3;
+}
+
+.promotion-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.details-promotion-card {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #1e1e1e;
+    transform: rotateX(-90deg);
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.promotion-card:hover .details-promotion-card {
+    transform: rotateX(0deg);
+}
+
+.promotion-card:hover .front-promotion-card {
+    scale: 0;
+}
+
+.details-promotion-card h4 {
+    color: #FFE500;
+    font-size: 14px;
+}
+
+.details-promotion-text {
+    font-size: 12px;
+    color: white;
+    padding-top: 6px;
+}
+
+.details-promotion-valid {
+    font-size: 14px;
+    color: white;
+    padding-top: 12px;
+}
+
+/* Website Footer */
+
+footer {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 20px;
+}
+
+footer > .menu,.footer {
+    margin: 20px 0px;
+}
+
+h2 {
+    color: white;
+}
+
+.footer-menu {
+    padding: 0px 20px;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1040px) {
+
+    
+    nav {
+        position: absolute;
+        top: 80px;
+        background: #1e1e1e;
+        left: 0px;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        z-index: 2;
+        height: 0;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .navbar-button {
+        position: absolute;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        top: 355px;
+        background-color: #1e1e1e;
+        z-index: 1;
+        height: 0;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .button {
+        margin: 15px 10px;
+        width: 180px;
+    }
+
+    .register {
+        margin: 15px 10px 30px 10px;
+    }
+
+    nav .navbar:first-child {
+        margin-top: 50px;
+    }
+
+    label {
+        margin-right: 30px;
+        width: 45px;
+        height: 30px;
+        position: relative;
+    }
+
+    label div {
+        width: 100%;
+        height: 5px;
+        background-color: #FFE500;
+        position: absolute;
+        transform: translateY(-50%);
+        border-radius: 90px;
+    }
+
+    label div:nth-child(1) {
+        top: 0px;
+    }
+
+    label div:nth-child(2) {
+        top: 50%;
+    }
+
+    label div:nth-child(3) {
+        top: 100%;
+    }
+
+    input:checked + header nav {
+        height: 275px;
+    }
+
+    input:checked + header .navbar-button {
+        height: 135px;
+    }
+
+    input:checked + header label div:nth-child(1) {
+        transform: rotate(45deg);
+        top: 50%;
+    }
+    
+    input:checked + header label div:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 50%;
+    }
+
+    input:checked + header label div:nth-child(2) {
+        transform: scale(0);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    .heading-section {
+        margin: 32px;
+    }
+
+    .all-promotion-section {
+        margin: 32px;
+    }
+
+}
+
+@media screen and (max-width: 426px) {
+    
+    .heading-section h2 {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .promotion-cards {
+        justify-content: center;
+    }
+
+    .all-promotion-section {
+        margin: 32px;
+    }
+
+    .all-promotion-section h2 {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-menu {
+        margin: 12px 0px;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+}
